@@ -5,11 +5,11 @@
 
 # constants
 $ErrorActionPreference = "Stop"
-$displayName = "ACO_App_v1.0.0"
+$displayName = "ACO_App"
 $keyDescription = "ACO App Key"
 $keyEndDate = "1/1/2099"
 $azureADModule = "AzureAD"
-$version = "ACO_App_Installer_1.0.0"
+$version = "ACO_App_Installer_1.0.1"
 $unexpectedError = "An unexpected error has occurred. Please review the following error message and try again.`n$($version)`n"
 $callbackUrls = "https://api.accordo.io/partner-center/callback"
 
@@ -147,7 +147,5 @@ Write-Host ""
 Write-Host -ForegroundColor Green "  ... Application created, pending user consent`n"
 
 Write-Host -ForegroundColor Green "Script complete, please update your ACO Partner Center settings to the following:"
-Write-Host "ApplicationId:`nApplicationSecret:`nTenantId:`n"
-Write-Host "$($app.AppId)`n$($password.Value)`n$($pcTenantId)"
-
+Write-Host "ApplicationId:`n$($app.AppId)`nApplicationSecret:`n$($password.Value)`nTenantId:`n$($pcTenantId)`n"
 

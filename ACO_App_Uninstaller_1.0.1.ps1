@@ -5,9 +5,9 @@
 
 # constants
 $ErrorActionPreference = "Stop"
-$displayName = "ACO_App_v1.0.0"
+$displayName = "ACO_App"
 $azureADModule = "AzureAD"
-$version = "ACO_App_Uninstaller_1.0.0"
+$version = "ACO_App_Uninstaller_1.0.1"
 $unexpectedError = "An unexpected error has occurred. Please review the following error message and try again.`n$($version)`n"
 
 Write-Host -ForegroundColor Yellow "Beginning $($version)"
